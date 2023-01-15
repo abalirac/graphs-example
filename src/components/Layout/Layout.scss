@@ -1,0 +1,71 @@
+//TODO use variables for colors etc.
+
+$containterBgColor: white;
+
+.layout {
+    background-color: #edf1f5;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(99, 102, 241);
+    }
+    
+    .layout__topbar {
+        position: fixed;
+        height: 5rem;
+        z-index: 997;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0 2rem;
+        background-color: $containterBgColor;
+        transition: left .2s;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 3px 5px rgba(0,0,0,.02),0 0 2px rgba(0,0,0,.05),0 1px 4px rgba(0,0,0,.08);
+
+        .logo {
+            height: 5rem;
+        }
+    }
+    
+    .layout__navbar {
+        position: fixed;
+        width: 15rem;
+        height: 100%;
+        z-index: 999;
+        overflow-y: auto;
+        -webkit-user-select: none;
+        user-select: none;
+        top: 7rem;
+        left: 0;
+        background-color: $containterBgColor;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 3px 5px rgba(0,0,0,.02),0 0 2px rgba(0,0,0,.05),0 1px 4px rgba(0,0,0,.08);
+
+        li {
+            list-style-type: none; 
+        }
+
+        a {
+            display: flex;
+            padding: 0.75rem 0;
+        }
+    }
+
+    .layout__main-container {
+        margin-left: 15rem;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: flex-start;
+        padding: 7rem 2rem 2rem 2rem;
+        transition: margin-left .2s;
+
+        > .p-card {
+            margin-bottom: 2rem;
+        }
+    }
+}

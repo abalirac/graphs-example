@@ -1,0 +1,4 @@
+/* This fixes a bug in primereact dropdown component */
+.p-dropdown-panel {
+    z-index: 3000 !important;
+}
