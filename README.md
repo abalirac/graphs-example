@@ -1,6 +1,6 @@
 # Example App
 
-Example App made with React + Hooks + PrimeReact
+Example App made with React + Hooks + PrimeReact to display a list of simulations and graphs
 
 ## Available Scripts
 
